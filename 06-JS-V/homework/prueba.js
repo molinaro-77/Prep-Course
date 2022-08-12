@@ -25,7 +25,7 @@ const Usuario = crearUsuario();
 const user = new Usuario({usuario: 'jssamuel', nombre: 'Samuel', email: 'samuel@email.com', password: 'LoveJS' });
 
 console.log(user.saludar()) */
-
+/* 
 function agregarStringInvertida() {
     // Agrega un método al prototype de String que devuelva la misma cadena de caracteres, pero invertida.
     // El método debe llamarse "reverse"
@@ -44,4 +44,19 @@ function agregarStringInvertida() {
 agregarStringInvertida()
 const str = 'Hello'
 
-console.log(str.reverse())
+console.log(str.reverse()) */
+
+var array = ['I', 'am', 'sam']
+
+for(let i = 0; i < array.length; i++){
+    if(i === 0){
+        console.log(array[i] + ' ' + array[i+1] + ' ' + array[i+2])
+        console.log(array[i] + ' ' + array[i+2] + ' ' + array[i+1])
+    }else if(i === 1){
+        console.log(array[i] + ' ' + array[i-1] + ' ' + array[i+1])
+        console.log(array[i] + ' ' + array[i+1] + ' ' + array[i-1])
+    }else{
+        console.log(array[i] + ' ' + array[i-1] + ' ' + array[i-2])
+        console.log(array[i] + ' ' + array[i-2] + ' ' + array[i-1])
+    }
+}
